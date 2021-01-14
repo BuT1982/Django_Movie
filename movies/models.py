@@ -1,14 +1,6 @@
 from django.db import models
 from datetime import date
 
-# Category
-# Actor
-# Genre
-# Movie
-# MovieShots
-# RatingStar
-# Rating
-# Reviews
 from django.urls import reverse
 
 

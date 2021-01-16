@@ -2,26 +2,14 @@ from django.shortcuts import redirect
 from django.views.generic import ListView, DetailView
 from django.views.generic.base import View
 
-from movies.models import Movie
+from movies.models import Movie, Category
 from .forms import ReviewForm
-
-
-# GenreYear
-# MoviesView
-# MovieDetailView
-# AddReview
-# ActorView
-# FilterMoviesView
-# JsonFilterMoviesView
-# AddStarRating
-# Search
 
 
 class MoviesView(ListView):
     """ Список фильмов """
     model = Movie
     queryset = Movie.objects.filter(draft=False)
-    # context_object_name = 'movies'
 
 
 class MovieDetailView(DetailView):
